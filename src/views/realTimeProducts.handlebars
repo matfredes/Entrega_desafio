@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Productos en Tiempo Real</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Lista de Productos en Tiempo Real</h1>
+  <ul id="realTimeProductsList">
+    {{#each products}}
+      <li>Producto ID: {{this.product}} - Cantidad: {{this.quantity}}</li>
+    {{/each}}
+  </ul>
+
+  <script src="/js/index.js"></script>
+</body>
+</html>
+
+{{!-- Comentario extra: según busqué, el #each permite acceder
+ a elementos dentro de un array o lista, en mi caso los productos de Carts.json --}}
+
+{{!-- NECESITO AYUDA --}}
